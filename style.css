@@ -283,7 +283,6 @@ button:hover{
     }
     .diagram-box{
         background-image: url(./assets/images/illustration-sign-up-desktop.svg);
-        background-color: red;
         height: 100%;
         width: 46%;
         background-size: cover ;
