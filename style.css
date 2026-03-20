@@ -53,7 +53,7 @@ body{
 }
 
 main{
-    width: 350px;
+    width: 375px;
     background-color: var(--White);
     position: absolute;
     margin-bottom: 50px;
@@ -63,7 +63,7 @@ main{
     height: 250px;
     width: 100%;
     background-repeat: no-repeat;
-    background-image: url(./assets/images/illustration-sign-up-mobile.svg);
+    background-image: url(/assets/images/illustration-sign-up-mobile.svg);
     border-radius: 0 0 20px 20px;
 }
 .illustration{
@@ -77,6 +77,11 @@ main{
     padding: 25px 35px 0 30px;
     
 }
+/* .diagram-box,
+.content{
+    
+    
+} */
 
 .content ul{
     display: flex;
@@ -106,7 +111,7 @@ main{
 .content li img{
     width: 1.1rem;
 }
-.email{
+.email-label{
     
     display: flex;
     flex-direction: column;
@@ -168,6 +173,7 @@ button:hover{
     position: relative;
     background-color: white;
     width: 350px;
+    /* margin: auto; */
 }
 .mobile-success img{
     width: 3rem;
@@ -206,7 +212,7 @@ button:hover{
         border-radius: 20px;
     }
      .diagram-box{
-        background-image: url(./assets/images/illustration-sign-up-tablet.svg);
+        background-image: url(/assets/images/illustration-sign-up-tablet.svg);
         height: 100%;
         width: 46%;
         background-size:cover;
@@ -282,7 +288,8 @@ button:hover{
        
     }
     .diagram-box{
-        background-image: url(./assets/images/illustration-sign-up-desktop.svg);
+        background-image: url(/assets/images/illustration-sign-up-desktop.svg);
+        background-color: red;
         height: 100%;
         width: 46%;
         background-size: cover ;
