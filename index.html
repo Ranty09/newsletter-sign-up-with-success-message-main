@@ -8,8 +8,6 @@
   <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
-
-  
   
 </head>
 <body>
@@ -28,10 +26,22 @@
         <p>Measuring to ensure updates are a success</p></li>
         <li><img src="./assets/images/icon-success.svg" alt=""><p>And much more!</p></li>
       </ul>
-      <label for="email address" class="email"><div class="email-content"><p>Email address</p> <p class="error-message">valid email required</p></div>
-        <input type="email" placeholder="email@company.com" class="email-input">
-      </label>
-      <button class="subscribe-btn">Subscribe to monthly newsletter</button>
+
+      <form action="">
+        <label for="email" class="email-label"><div class="email-content"><p>Email address</p> <p class="error-message">valid email required</p></div>
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          placeholder="email@company.com" 
+          class="email-input" 
+          required
+          aria-describedby="email-error"
+        >
+        </label>
+        <button type="submit" class="subscribe-btn">Subscribe to monthly newsletter</button>
+      </form>
+      
     </section>
     
   </main>
@@ -55,6 +65,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Ranti Ogunrinde</a>.
   </div>
-  <script src="script.js"></script>
+  <script src="/script.js"></script>
 </body>
 </html>
