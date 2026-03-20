@@ -23,7 +23,8 @@ function validateEmail(email) {
 
 
 
-subscribeBtn.addEventListener("click", function(){
+subscribeBtn.addEventListener("click", function(event){
+  event.preventDefault();
   let currentInputValue = emailInput.value;
   if(validateEmail(currentInputValue)){
     toggleSuccessPage()
@@ -33,14 +34,13 @@ subscribeBtn.addEventListener("click", function(){
   }
 });
 
-// Mail Acknowlegment
+// Mail Acknowledgement
 dismissBtn.addEventListener("click", function(){
-   location.reload()
+   
   
-    // theSuccessPage.classList.remove("opened");
-    // theMainContainer.style.display = "block"; 
-    // theMainContainer.style.visibility = "visible";
-    // emailInput.value = "";
-    // emailInput.classList.remove("error");
-    // errorNote.style.display = "none"
+    theSuccessPage.classList.remove("opened");
+    theMainContainer.style.visibility = "visible";
+    emailInput.value = "";
+    emailInput.classList.remove("error");
+    errorNote.style.display = "none"
 });
